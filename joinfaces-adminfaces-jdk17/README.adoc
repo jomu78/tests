@@ -1,0 +1,16 @@
+# Known issues
+
+## Exceptions at startup
+
+* org.jboss.weld.Bootstrap spills exception at startup
+* workaround: disabled logging in application.yml
+* bug: https://github.com/joinfaces/joinfaces/issues/1625
+
+## Additional depdencies required
+
+* starter does not pull all depdendencies, see pom.xml for additional ones
+
+## Page now shown
+
+* NPE when opening http://localhost:8080/
+* bug: https://github.com/joinfaces/joinfaces/issues/1628

@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+#FIXME - Jandex index throws a bunch of errors on startup
+logging:
+  level:
+    org:
+      jboss:
+        weld:
+          Bootstrap: OFF
+
+
+## Joinfaces / Frontend
+joinfaces:
+  adminfaces:
+    auto-hide-messages: true
+    disable-filter: true
+    index-page: web/index.xhtml
+    login-page: web/index.xhtml
+    render-ajax-status: false
+    render-bread-crumb: false
+    render-messages: true
+    render-form-asterisks: true
+    render-menu-search: false
+    render-control-sidebar: false
+    skin: skin-green-light
+    skip-message-detail-if-equals-summary: true
+  faces:
+    project-stage: Development
+    interpret-empty-string-submitted-values-as-null: true
