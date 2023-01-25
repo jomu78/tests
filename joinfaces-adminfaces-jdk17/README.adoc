@@ -5,12 +5,10 @@
 * org.jboss.weld.Bootstrap spills exception at startup
 * workaround: disabled logging in application.yml
 * bug: https://github.com/joinfaces/joinfaces/issues/1625
-
-## Additional depdencies required
-
-* starter does not pull all depdendencies, see pom.xml for additional ones
+* fixed in JoinFaces 5.0.2
 
 ## Page now shown
 
 * NPE when opening http://localhost:8080/
 * bug: https://github.com/joinfaces/joinfaces/issues/1628
+* fixed in JoinFaces 5.0.2

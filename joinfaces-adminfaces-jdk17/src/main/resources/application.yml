@@ -3,15 +3,6 @@ server:
   servlet:
     context-path: /
 
-#FIXME - Jandex index throws a bunch of errors on startup
-logging:
-  level:
-    org:
-      jboss:
-        weld:
-          Bootstrap: OFF
-
-
 ## Joinfaces / Frontend
 joinfaces:
   adminfaces:
@@ -25,7 +16,7 @@ joinfaces:
     render-form-asterisks: true
     render-menu-search: false
     render-control-sidebar: false
-    skin: skin-green-light
+    skin: skin-blue-light
     skip-message-detail-if-equals-summary: true
   faces:
     project-stage: Development

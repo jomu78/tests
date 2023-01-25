@@ -7,7 +7,7 @@
   <artifactId>joinfaces-adminfaces-jdk17</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <name>joinfaces-adminfaces-jdk17</name>
-  <description>Test Joinfaces 5.0.x in combination with adminfaces and JDK17</description>
+  <description>Test JoinFaces 5.0.x in combination with AdminFaces and JDK17</description>
 
   <properties>
 
@@ -16,8 +16,8 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.compiler.release>${java.version}</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <joinfaces.version>5.0.1</joinfaces.version>
-    <spring-boot.version>3.0.1</spring-boot.version>
+    <joinfaces.version>5.0.2</joinfaces.version>
+    <spring-boot.version>3.0.2</spring-boot.version>
   </properties>
 
   <dependencyManagement>
@@ -37,18 +37,11 @@
       <groupId>org.joinfaces</groupId>
       <artifactId>adminfaces-spring-boot-starter</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
 
-    <!-- TODO: why are those dependencies required?? Should be automatically added by starter? -->
-    <dependency>
-      <groupId>jakarta.platform</groupId>
-      <artifactId>jakarta.jakartaee-web-api</artifactId>
-      <version>10.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse</groupId>
-      <artifactId>yasson</artifactId>
-      <version>3.0.2</version>
-    </dependency>
   </dependencies>
 
   <build>
