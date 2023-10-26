@@ -1,0 +1,38 @@
+# spring-data-jpa
+
+Test update from SpringBoot 2.7 / Hibernate 5.1 to SpringBoot 3.1 / Hibernate 6.2
+
+## Setup local database
+* create postgres database jpatest `createdb jpatest --owner=<username> --encoding=UTF-8`
+* setup file `src/main/resources/application-local.yml`
+
+.application-local.yml
+....
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jpatest
+    username: <username>
+    password: <password>
+....
+Adjust username and passwords (and url if required) to match your local setup.
+
+## HHH-xxxxxx
+Association 'xxxx' is 'mappedBy' a property named 'yyyy' which references the wrong entity type
+
+Steps to reproduce
+
+.working configuration using SpringBoot 2.7/Hibernate 5.1
+....
+git checkout main
+mvn clean verify
+java -Dspring.profiles.active=dev -jar target/spring-hibernate-update-1.0.0-SNAPSHOT-starter.jar
+....
+
+.Exception using SpringBoot 3.1/Hibernate 6.2
+....
+git checkout spring-boot-31
+mvn clean verify
+java -Dspring.profiles.active=dev -jar target/spring-hibernate-update-1.0.0-SNAPSHOT-starter.jar
+....
+
+
