@@ -16,7 +16,9 @@ spring:
 ....
 Adjust username and passwords (and url if required) to match your local setup.
 
-## HHH-xxxxxx
+## HHH-17195
+https://hibernate.atlassian.net/browse/HHH-17195[HHH-17195]
+
 Association 'xxxx' is 'mappedBy' a property named 'yyyy' which references the wrong entity type
 
 Steps to reproduce
