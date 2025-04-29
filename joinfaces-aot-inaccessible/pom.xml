@@ -20,8 +20,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <joinfaces.version>5.4.5</joinfaces.version>
+
     <!-- downgrade to spring framework 6.2.5 to make in run -->
 <!--    <spring-framework.version>6.2.5</spring-framework.version>-->
+    <spring-framework.version>6.2.7-SNAPSHOT</spring-framework.version>
   </properties>
 
   <dependencyManagement>
