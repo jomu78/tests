@@ -12,6 +12,7 @@
   <modules>
     <module>joinfaces-adminfaces-jdk17</module>
     <module>spring-hibernate-update</module>
+    <module>joinfaces-aot-inaccessible</module>
   </modules>
 
 </project>
